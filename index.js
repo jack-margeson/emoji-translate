@@ -32,7 +32,7 @@ bot.on('error', err => {
 bot.on('start', () => {
   // bot.postMessageToChannel('emoji-translate', 'Hello, world!');
   // bot.postMessageToUser('margeson.jack', 'emoji-translate is now online.');
-  // console.log('\033[2J') // clear console
+  console.log('\033[2J') // clear console
   console.log(`emoji-translate is now online.
 Searching for messages…`)
 })
@@ -52,7 +52,7 @@ bot.on('message', data => {
 })
 
 function info(data) {
-  // console.log('\033[2J') // clear console
+  console.log('\033[2J') // clear console
   console.log(
     `emoji-translate
 Bot's user ID: id
@@ -97,7 +97,6 @@ function translate(data) {
     .replace(/ /g, '     ')
     .replace(/[^a-zA-Z ]/g, '')
     .toLowerCase()
-
   const results = []
   text.split('').map(letter => {
     results.push(`:${replacements[letter] || letter}:`)
