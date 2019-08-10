@@ -76,7 +76,7 @@ const replacements = {
   k: 'heroku',
   l: 'ltc',
   m: 'xmr',
-  w: 'netflix',
+  n: 'netflix',
   o: 'opera',
   p: 'paypal',
   q: 'quora',
