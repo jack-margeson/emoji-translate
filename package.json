@@ -1,14 +1,15 @@
 {
   "name": "emoji-translate",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Translates your sentences into emoji!",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node -r dotenv/config index.js"
   },
   "author": "Jack Margeson",
   "license": "MIT",
   "dependencies": {
-    "slackbots": "1.2.0"
+    "slackbots": "1.2.0",
+    "dotenv": "^8.2.0"
   }
 }
